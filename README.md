@@ -40,7 +40,7 @@ You can create array by some methods mentioned below
 
 #### Method 4 - Using numpy.zeros() and numpy.ones():
 - Syntax will be np.zeros((a,b)) where a And B Are Dimension of Array
--  Syntax will be np.ones((a,b)) Where a And B Are Dimension of Array
+- Syntax will be np.ones((a,b)) Where a And B Are Dimension of Array
 
 #### Method 5 - Using numpy.empty():
 - Syntax will be empty_array = np.empty((a, b)) Where a And B Are Dimensions
@@ -57,40 +57,39 @@ _________________________________
 
 
 __________________________________
-### Some of the Elementary Functions in Numpy
+### Elementary Functions in Numpy
 
-1. Max Element
-- You can find the max element in array using np.max(name_of_Array)
-- if you want to find the max element in row then pass an additional argument as axis=0)
-- The default is coloumn which means axis=1
+**1. Max Element**
+- Syntax: `np.max(name_of_array)` or `np.max(name_of_array, axis=0)`
+- Description: Finds the maximum element in an array, optionally along a specified axis.
 
-2. Min Element
-- You can find the min element in array using np.min(name_of_Array)
-- if you want to find the min element in row then pass an additional argument as axis=0)
-- The default is coloumn which means axis=1
+**2. Min Element**
+- Syntax: `np.min(name_of_array)` or `np.min(name_of_array, axis=0)`
+- Description: Finds the minimum element in an array, optionally along a specified axis.
 
-3. Sum of array
--  We can find the sum of the array using this function by simply callins np.sum(array)
--  
+**3. Sum of Array**
+- Syntax: `np.sum(array)`
+- Description: Finds the sum of the elements in an array.
 
-4. Product of array
-- We can find the Product of the array using this function by simply callins np.prod(array)
+**4. Product of Array**
+- Syntax: `np.prod(array)`
+- Description: Finds the product of the elements in an array.
 
-5. Dot Product of 2 Arrays.
-- You can perform dot product of two arrays using np.dot(arr_1,arr_2)
-- 
+**5. Dot Product of 2 Arrays**
+- Syntax: `np.dot(arr_1, arr_2)`
+- Description: Computes the dot product of two arrays.
 
-6. Rouding a Number
-- You can round a number using np.round()
-- You can pass either an indivisual number or a list whose each value will be rounded of to the nearest number
+**6. Rounding a Number**
+- Syntax: `np.round(number)` or `np.round(array)`
+- Description: Rounds a number or each element in an array to the nearest integer.
 
-7. Flooring a Number
-- The numpy.floor() function returns the largest integer less than or equal to each element.
-- Syntax will be np.floor(3.14159) will return 3.
-- It can be applied on a array also.
-8. Cieling a Number
-- This Function returns the next integer number that is more than or equal to input number or list.
-- For Tuple you have to convert the tuple to either list or array and then apply these functions.
+**7. Flooring a Number**
+- Syntax: `np.floor(number)` or `np.floor(array)`
+- Description: Returns the largest integer less than or equal to each element in a number or array.
+
+**8. Ceiling a Number**
+- Syntax: `np.ceil(number)` or `np.ceil(array)`
+- Description: Returns the smallest integer greater than or equal to each element in a number or array.
 
 
 
@@ -99,56 +98,71 @@ __________________________________
 
 ________________________________________________
 ### Advanced Numpy Functions
-1. astype() -
-    - array_name.astype() - here we can pass data type by the following syntax np.int32 to convert data type.
-    - This is mostly used when integers like age are mentioned in float to reduce the size of data.
-2. Sort()
-    - Syntax is np.sort(array)
-    - This Function sorts the array into accending order by default but can be changed to descending order by np.sort(array)[::-1]
-3. Append()
-    - Syntax is np.append(array,new_number or list)
-    - This Function appends a number or list to numpy array.
-4. Concatenate()
-    - Syntax is np.concatenate((arr1, arr2), axis=0 or 1)
-    - This Function concatenates two arrays about a axis.
-5. Unique()
-    - Syntax is np.unique(array)
-    - This Function is used to find the number of unique values in the array
-6. Expand Dimnesions
+### Functions Overview
 
-7.Where()
-    - Syntax is np.where(condition or lambda function)
-    - Other way to use this np.where(condition, if condition is true then keep it in arr , else replace with something like 0 or 1) 
-    - Used when we want to find elements that satisfy our condition
-    - 
-8. argmax()
-    - syntax is np.argmax(array)
-    - This Function returns the indices of the maximum values along a specified axis in an array.
-    - 
-9. Cumsum()
-    - Syntax is np.cumsum(array)
-    - This Function Returns the cumulative sum of array elements along a specified axis.
-10. Histogram()
-    - Syntax is np.histogram(array, len_of_bin = [list])
-    - This Function returns a Histogram  
-11. Correlation Coefficient
-    - Syntax is np.corrcoef(array_1 , array_2)
-    - This Function returns the Correaltion Coefficient of Both the Arrays
-12. Isin()
-    - Syntax will be np.isin(array,[Multiple items inside list])
-    - 
-13. Flip()
-    - Syntax will be np.flip(array)
-    - This Function returns the reverse of order of elements about an axis.
-14. Delete()
-    - Syntax will be np.delete(array, obj, axis=None)
-    - This Function is used to delete elements from an array along a specified axis.
-15. Put()
-    - Syntax will be np.put(array, indices, values, mode='raise')
-    - This Function Used to Replace Specific Elements in An Array with Given Values.
-16. Clip()
-    - Syntax will be np.clip(array, array_min, array_max, out=None)
-    - This Function is used to limit the values in an array to be within a specified range
+**1. Astype()**
+- Syntax: `array_name.astype(np.dtype)`
+- Description: Converts data type of array elements, often used for optimizing memory usage.
+
+**2. Sort()**
+- Syntax: `np.sort(array)`
+- Description: Sorts the array in ascending order by default; for descending order, use `np.sort(array)[::-1]`.
+
+**3. Append()**
+- Syntax: `np.append(array, new_number_or_list)`
+- Description: Appends a number or list to a numpy array.
+
+**4. Concatenate()**
+- Syntax: `np.concatenate((arr1, arr2), axis=0 or 1)`
+- Description: Concatenates two arrays along a specified axis.
+
+**5. Unique()**
+- Syntax: `np.unique(array)`
+- Description: Finds the number of unique values in the array.
+
+**6. Expand Dimensions**
+- (Missing details on syntax and description)
+
+**7. Where()**
+- Syntax: `np.where(condition)`
+- Alternatively: `np.where(condition, x, y)`
+- Description: Finds elements satisfying a condition or replaces values based on a condition.
+
+**8. Argmax()**
+- Syntax: `np.argmax(array)`
+- Description: Returns indices of maximum values along a specified axis.
+
+**9. Cumsum()**
+- Syntax: `np.cumsum(array)`
+- Description: Returns cumulative sum of array elements along a specified axis.
+
+**10. Histogram()**
+- Syntax: `np.histogram(array, bins=[list])`
+- Description: Returns a histogram.
+
+**11. Correlation Coefficient**
+- Syntax: `np.corrcoef(array_1, array_2)`
+- Description: Returns the correlation coefficient of both arrays.
+
+**12. Isin()**
+- Syntax: `np.isin(array, [items])`
+- Description: Checks whether elements in an array are contained in a specified list.
+
+**13. Flip()**
+- Syntax: `np.flip(array)`
+- Description: Returns the reverse order of elements about an axis.
+
+**14. Delete()**
+- Syntax: `np.delete(array, obj, axis=None)`
+- Description: Deletes elements from an array along a specified axis.
+
+**15. Put()**
+- Syntax: `np.put(array, indices, values, mode='raise')`
+- Description: Replaces specific elements in an array with given values.
+
+**16. Clip()**
+- Syntax: `np.clip(array, array_min, array_max, out=None)`
+- Description: Limits the values in an array to be within a specified range.
 
 
 
