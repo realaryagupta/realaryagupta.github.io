@@ -68,6 +68,25 @@ __________________________________
 - if you want to find the min element in row then pass an additional argument as axis=0)
 - The default is coloumn which means axis=1
 
+3. Sum of array
+-  We can find the sum of the array using this function by simply callins np.sum(array)
+-  
+
+4. Product of array
+- We can find the Product of the array using this function by simply callins np.prod(array)
+
+5. Dot Product of 2 Arrays.
+- You can perform dot product of two arrays using np.dot(arr_1,arr_2)
+- 
+
+6. Rouding a Number
+- You can round a number using np.round()
+- You can pass either an indivisual number or a list whose each value will be rounded of to the nearest number
+
+7. Flooring a Number
+- The numpy.floor() function returns the largest integer less than or equal to each element.
+- Syntax will be np.floor(3.14159) will return 3.
+- It can be applied on a array also.
 
 
 
