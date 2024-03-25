@@ -100,6 +100,8 @@ ________________________________________________
 ### Advanced Numpy Functions
 ### Functions Overview
 
+### Numpy Functions Overview
+
 **1. Astype()**
 - Syntax: `array_name.astype(np.dtype)`
 - Description: Converts data type of array elements, often used for optimizing memory usage.
@@ -124,8 +126,7 @@ ________________________________________________
 - (Missing details on syntax and description)
 
 **7. Where()**
-- Syntax: `np.where(condition)`
-- Alternatively: `np.where(condition, x, y)`
+- Syntax: `np.where(condition)` or `np.where(condition, x, y)`
 - Description: Finds elements satisfying a condition or replaces values based on a condition.
 
 **8. Argmax()**
