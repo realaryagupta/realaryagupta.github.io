@@ -1,4 +1,4 @@
-## Numpy Essentials - Everything you need to know to master numpy
+## Numpy Essentials
 
 ### What is the Difference between Numpy Array and Python List
 Numpy arrays are similar to python list in essence but they can do much more than lists.\
@@ -88,15 +88,69 @@ __________________________________
 - The numpy.floor() function returns the largest integer less than or equal to each element.
 - Syntax will be np.floor(3.14159) will return 3.
 - It can be applied on a array also.
+8. Cieling a Number
+- This Function returns the next integer number that is more than or equal to input number or list.
+- For Tuple you have to convert the tuple to either list or array and then apply these functions.
 
 
 
 
 
 
-
-
+________________________________________________
+### Advanced Numpy Functions
 1. astype() -
-- array_name.astype() - here we can pass data type by the following syntax np.int32 to convert data type.
-- This is mostly used when integers like age are mentioned in float to reduce the size of data.
--  
+    - array_name.astype() - here we can pass data type by the following syntax np.int32 to convert data type.
+    - This is mostly used when integers like age are mentioned in float to reduce the size of data.
+2. Sort()
+    - Syntax is np.sort(array)
+    - This Function sorts the array into accending order by default but can be changed to descending order by np.sort(array)[::-1]
+3. Append()
+    - Syntax is np.append(array,new_number or list)
+    - This Function appends a number or list to numpy array.
+4. Concatenate()
+    - Syntax is np.concatenate((arr1, arr2), axis=0 or 1)
+    - This Function concatenates two arrays about a axis.
+5. Unique()
+    - Syntax is np.unique(array)
+    - This Function is used to find the number of unique values in the array
+6. Expand Dimnesions
+
+7.Where()
+    - Syntax is np.where(condition or lambda function)
+    - Other way to use this np.where(condition, if condition is true then keep it in arr , else replace with something like 0 or 1) 
+    - Used when we want to find elements that satisfy our condition
+    - 
+8. argmax()
+    - syntax is np.argmax(array)
+    - This Function returns the indices of the maximum values along a specified axis in an array.
+    - 
+9. Cumsum()
+    - Syntax is np.cumsum(array)
+    - This Function Returns the cumulative sum of array elements along a specified axis.
+10. Histogram()
+    - Syntax is np.histogram(array, len_of_bin = [list])
+    - This Function returns a Histogram  
+11. Correlation Coefficient
+    - Syntax is np.corrcoef(array_1 , array_2)
+    - This Function returns the Correaltion Coefficient of Both the Arrays
+12. Isin()
+    - Syntax will be np.isin(array,[Multiple items inside list])
+    - 
+13. Flip()
+    - Syntax will be np.flip(array)
+    - This Function returns the reverse of order of elements about an axis.
+14. Delete()
+    - Syntax will be np.delete(array, obj, axis=None)
+    - This Function is used to delete elements from an array along a specified axis.
+15. Put()
+    - Syntax will be np.put(array, indices, values, mode='raise')
+    - This Function Used to Replace Specific Elements in An Array with Given Values.
+16. Clip()
+    - Syntax will be np.clip(array, array_min, array_max, out=None)
+    - This Function is used to limit the values in an array to be within a specified range
+
+
+
+
+    
