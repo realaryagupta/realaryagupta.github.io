@@ -1,5 +1,4 @@
-# realaryagupta.github.io
-
+## Numpy Essentials - Everything you need to know to master numpy
 
 ### What is the Difference between Numpy Array and Python List
 Numpy arrays are similar to python list in essence but they can do much more than lists.\
