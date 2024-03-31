@@ -49,6 +49,12 @@ You can create array by some methods mentioned below
 #### method 6 - Using Numpy.Eye() and Numpy.Identity():
 - syntax Will Be Np.Eye(a)  # Axa Identity Matrix
 
+
+### How to create a List from Array
+- Use Function tolist()
+- Syntax - array_name.tolist()
+
+
 _________________________________
 
 ### Operations on Array
@@ -165,7 +171,28 @@ ________________________________________________
 - Syntax: `np.clip(array, array_min, array_max, out=None)`
 - Description: Limits the values in an array to be within a specified range.
 
+**17. Reshape()**
+- Syntax `array_name.reshape(a,b) where a and b are derired shapes`
+- Description - It Reshapes the array into our desired shape.
+- Here the Product of a and b must be equal to the number of elements in the array.
+
+**18. Flatten()**
+- Syntax `array_name.flatten()`
+- Description - It Flattens the array into 1 Dimension.
 
 
+______________________________________________________
+
+### Cheat Hacks for Numpy
+1. To reverse an array use list_name[::-1], This is for reversing rows only
+2. To reverse columns also use list_name[::-1 , ::-1]
+3. 
+
+
+
+### Slicing in Python
+
+
+### Broadcasting in Numpy
 
     
